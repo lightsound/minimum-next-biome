@@ -2,8 +2,8 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"biome.rename": true,
-	"cSpell.words": ["biomejs", "tailwindcss"],
+	"biome.experimental.rename": true,
+	"cSpell.words": ["biomejs"],
 	"editor.codeActionsOnSave": {
 		"quickfix.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
@@ -14,6 +14,5 @@
 	"editor.quickSuggestions": {
 		"strings": true
 	},
-	"postcss.validate": false,
 	"typescript.tsdk": "./node_modules/typescript/lib"
 }

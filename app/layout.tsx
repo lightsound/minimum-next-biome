@@ -1,13 +1,9 @@
-import "./globals.css";
-
 export default function RootLayout({
 	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+}: { children: React.ReactNode }): React.ReactNode {
 	return (
 		<html lang="ja">
-			<body>{children}</body>
+			<body suppressHydrationWarning={true}>{children}</body>
 		</html>
 	);
 }

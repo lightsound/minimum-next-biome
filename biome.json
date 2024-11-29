@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"files": {
 		"ignore": ["public", ".next", "node_modules"]
 	},
@@ -15,10 +15,23 @@
 			"all": true,
 			"nursery": {
 				"all": true,
-				"noUndeclaredDependencies": "off",
-				"noReactSpecificProps": "off",
 				"useSortedClasses": "warn"
+			},
+			"suspicious": {
+				"all": true,
+				"noReactSpecificProps": "off"
 			}
+		}
+	},
+	"css": {
+		"parser": {
+			"cssModules": true
+		},
+		"linter": {
+			"enabled": true
+		},
+		"formatter": {
+			"enabled": true
 		}
 	},
 	"overrides": [
@@ -30,8 +43,7 @@
 				"not-found.tsx",
 				"page.tsx",
 				"template.tsx",
-				"next.config.mjs",
-				"tailwind.config.ts"
+				"next.config.ts"
 			],
 			"linter": {
 				"rules": {
